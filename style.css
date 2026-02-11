@@ -1,0 +1,168 @@
+body {
+    background-color: #555;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Controls (Left Side) */
+.controls {
+    flex: 0 0 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.controls input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.controls button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Preview Area (Right Side) */
+.preview-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* A4 Paper Styling */
+.a4-page {
+    width: 210mm;
+    min-height: 297mm;
+    background: white;
+    padding: 20mm 20mm 10mm 20mm; /* Top, Right, Bottom, Left */
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    position: relative;
+    box-sizing: border-box;
+    
+    /* Typography matching the image */
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    font-size: 12pt;
+    line-height: 1.5;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5mm;
+}
+
+.logo-section {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.title-section {
+    flex: 1;
+}
+
+.org-name {
+    color: #1a8cbf; /* The specific blue from the image */
+    font-size: 24pt;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', serif; 
+    font-weight: normal; /* Often these logos aren't bold, just large */
+}
+
+.reg-no {
+    text-align: center;
+    font-size: 10pt;
+    margin: 5px 0 0 0;
+    padding-right: 40px; /* Adjust to center it under text */
+}
+
+.date-line {
+    text-align: right;
+    margin-bottom: 15mm;
+    font-weight: bold;
+}
+
+.letter-subject {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    margin-bottom: 10mm;
+    text-decoration: none;
+}
+
+/* Body Text */
+.body-content p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Signatures */
+.signatures {
+    margin-top: 25mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sig-left p {
+    margin: 2px 0;
+}
+
+.sig-img {
+    height: 40px; /* Adjust based on your signature image */
+    display: block;
+    margin-top: 10px;
+}
+
+.sig-right {
+    text-align: center;
+}
+
+.line-box {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 15mm;
+    left: 20mm;
+    right: 20mm;
+    display: flex;
+    justify-content: space-between;
+    border-top: none; 
+    color: #1a8cbf; /* Blue footer text */
+    font-size: 10pt;
+    text-decoration: underline;
+}
+
+.footer span {
+    margin: 0 10px;
+}
